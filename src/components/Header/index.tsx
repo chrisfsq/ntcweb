@@ -9,17 +9,18 @@ export default function Header() {
             </div>
             <div className="flex justify-center items-center">
                 <ul className="flex gap-5 align-center justify-center text-cyan-500">
-                    <a href=""><li>INICIO</li></a>
-                    <a href=""><li>AGENDAMENTO</li></a>
-                    <a href=""><li>SOBRE NÓS</li></a>
+                    <a href=""><li>Inicio</li></a>
+                    <a href=""><li>Agendamentos</li></a>
+                    <a href=""><li>Sobre nós</li></a>
                 </ul>
             </div>
-            <div className="flex text-cyan-500 items-center gap-16">
-                <div className="flex flex-col items-center">
+            <div className="flex text-cyan-500 items-center gap-5">
+                <div className="flex flex-col items-center font-bold">
                     <ContactIcon />
                     <a href="">Contato</a>
                 </div>
-                <div className="flex flex-col items-center">
+                <div className="header-divider"></div>
+                <div className="flex flex-col items-center font-bold">
                     <LocalIcon/>
                     <a href="">Localização</a>
                 </div>
