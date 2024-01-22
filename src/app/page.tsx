@@ -1,21 +1,53 @@
 import Carousel from "@/components/carousel.component";
 import Header from "@/components/Header";
+import Aicon from "@/components/Icons/Aicon";
+import Bicon from "@/components/Icons/Bicon";
+import Dicon from "@/components/Icons/Dicon";
+import Ficon from "@/components/Icons/Ficon";
+import Content from "@/components/SectionContent"
 
-export default function App(){
+export default function App() {
   let slides = [
-    "https://www.aihr.com/wp-content/uploads/employee-assistance-program-cover.png",
-    "https://www.insperity.com/wp-content/uploads/EAP_1200x630.png",
-    "https://www.hrmagazine.co.uk/media/sy1iw4b1/article-images-2f231988-2f1562208520_employeecare.jpg?width=1002&height=564&bgcolor=White&rnd=133210262172530000"
+    "https://i.imgur.com/RYJYM6w.png",
+    "https://i.imgur.com/nOZVqsh.png",
+    "https://i.imgur.com/3ZeiIsq.png"
   ];
 
-  return(
+  return (
     <>
-    <main>
-      <Header/>
-    </main>
-    <section className="w-[50%] m-auto pt-11">
-      <Carousel slides={slides}/>
-    </section>
+      <main className="bg-cyan-500">
+        <Header />
+      </main>
+      <section className="bg-cyan-500">
+        <div className="w-full h-auto">
+        <Carousel slides={slides} />
+        </div>
+      </section>
+
+      <div className="flex mt-5">
+        <div className="flex">
+        <Content
+          text="Fazemos avaliação no conforto da sua casa."
+          icon={<Aicon />}
+        />
+        </div>
+        <Content
+          text="Ampla gama de peças de reposição em estoque."
+          icon={<Bicon />}
+        />
+
+        <Content
+          text="Diagnóstico preciso e sem troca de peças desnecessárias."
+          icon={<Dicon />}
+        />
+
+        <Content
+          text="Suporte técnico interno dedicado disponível."
+          icon={<Ficon />}
+        />
+      </div>
+
+      <div className="div-divider"></div>
     </>
   )
 }

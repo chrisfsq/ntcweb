@@ -27,20 +27,25 @@ export default function Carousel({ slides }) {
         return () => clearInterval(interval);
     }, [current]);
 
+
     return (
         <div className="overflow-hidden relative">
             <div
-                className={`flex transition ease-out duration-40`}
+                className={`flex transition ease-out duration-500`}
                 style={{
-                    transform: `translateX(-${current * 100}%)`
+                    transform: `translateX(-${current * (100 / slides.length)}%)`,
+                    width: `${slides.length * 100}%`
                 }}
             >
-
-                {slides.map((s) => {
-                    return (
-                        <img src={s} />
-                    )
-                })}
+                {slides.map((s, index) => (
+                    <div key={index} style={{ flex: `0 0 ${100 / slides.length}%`, height: "500px" }}>
+                        <img
+                            src={s}
+                            alt={`Slide ${index}`}
+                            style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                        />
+                    </div>
+                ))}
             </div>
             <div className="absolute top-0 h-full w-full items-center flex justify-between text-cyan-500 px-10 text-3xl">
                 <button onClick={previousSlide}>
@@ -51,5 +56,7 @@ export default function Carousel({ slides }) {
                 </button>
             </div>
         </div>
-    )
+    );
+
+
 }

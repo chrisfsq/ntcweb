@@ -12,9 +12,9 @@ export default function Header() {
             </div>
             <div className="flex justify-center items-center">
                 <ul className="flex gap-5 align-center justify-center text-cyan-500">
-                    <a href=""><li>Inicio</li></a>
-                    <a href=""><li>Agendamentos</li></a>
-                    <a href=""><li>Sobre nós</li></a>
+                    <a href="" className="hover:text-sky-700"><li>Inicio</li></a>
+                    <a href="" className="hover:text-sky-700"><li>Agendamentos</li></a>
+                    <a href="" className="hover:text-sky-700"><li>Sobre nós</li></a>
                 </ul>
             </div>
             <div className="flex text-cyan-500 items-center gap-5">
@@ -22,7 +22,7 @@ export default function Header() {
                 <MdEmail />
                     <a href="">Contato</a>
                 </div>
-                <div className="header-divider"></div>
+                <div className="divider"></div>
                 <div className="flex flex-col items-center font-bold text-[15pt]">
                 <FaMapMarkerAlt />
                     <a href="">Localização</a>
