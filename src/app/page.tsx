@@ -19,7 +19,7 @@ export default function App() {
         <Header />
       </main>
       <section className="bg-cyan-500">
-        <div className="w-full h-auto">
+        <div className="w-full h-[600px]">
         <Carousel slides={slides} />
         </div>
       </section>

@@ -1,5 +1,7 @@
 export default function Logo(){
     return(
-        <img src="/images/logo.png" alt="Logo" width="150" height="50"/>
+        <div className="cursor-pointer">
+        <img src="/images/logo-white.png" alt="Logo" width="150" height="50"/>
+        </div>
     )
 }

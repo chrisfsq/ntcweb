@@ -38,11 +38,11 @@ export default function Carousel({ slides }) {
                 }}
             >
                 {slides.map((s, index) => (
-                    <div key={index} style={{ flex: `0 0 ${100 / slides.length}%`, height: "500px" }}>
+                    <div key={index} style={{ flex: `0 0 ${100 / slides.length}%`, height: "700px" }}>
                         <img
                             src={s}
                             alt={`Slide ${index}`}
-                            style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                            style={{ width: "100%", height: "600px", objectFit: "cover" }}
                         />
                     </div>
                 ))}
