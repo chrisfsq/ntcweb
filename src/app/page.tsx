@@ -8,29 +8,28 @@ import Content from "@/components/SectionContent"
 
 export default function App() {
   let slides = [
-    "https://i.imgur.com/RYJYM6w.png",
-    "https://i.imgur.com/nOZVqsh.png",
-    "https://i.imgur.com/3ZeiIsq.png"
+    "https://i.imgur.com/a6Iasxn.png",
+    "https://i.imgur.com/3uUTPzy.png",
   ];
 
   return (
     <>
-      <main className="bg-cyan-500">
+      <main>
+        <h1>Ola</h1>
         <Header />
       </main>
-      <section className="bg-cyan-500">
-        <div className="w-full h-[600px]">
+      <section>
         <Carousel slides={slides} />
-        </div>
+        
       </section>
 
-      <div className="flex mt-5">
-        <div className="flex">
+      <div className="flex">
+
         <Content
           text="Fazemos avaliação no conforto da sua casa."
           icon={<Aicon />}
         />
-        </div>
+
         <Content
           text="Ampla gama de peças de reposição em estoque."
           icon={<Bicon />}

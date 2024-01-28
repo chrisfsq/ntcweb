@@ -47,7 +47,7 @@ export default function Carousel({ slides }) {
                     </div>
                 ))}
             </div>
-            <div className="absolute top-0 h-full w-full items-center flex justify-between text-cyan-500 px-10 text-3xl">
+            <div className="absolute top-0 h-full w-full items-center flex justify-between text-[#F44336] px-10 text-3xl">
                 <button onClick={previousSlide}>
                     <BsFillArrowLeftSquareFill />
                 </button>
