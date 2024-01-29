@@ -5,6 +5,7 @@ import Bicon from "@/components/Icons/Bicon";
 import Dicon from "@/components/Icons/Dicon";
 import Ficon from "@/components/Icons/Ficon";
 import Content from "@/components/SectionContent"
+import ContactInfo from "@/components/Social/ContactInfo";
 
 export default function App() {
   let slides = [
@@ -12,15 +13,15 @@ export default function App() {
     "https://i.imgur.com/3uUTPzy.png",
   ];
 
+
   return (
     <>
       <main>
-        <h1>Ola</h1>
+        <ContactInfo />
         <Header />
       </main>
       <section>
         <Carousel slides={slides} />
-        
       </section>
 
       <div className="flex">
